@@ -1,0 +1,447 @@
+
+body{
+    background-image: url("background.jpg");
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .question-btn-container{
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .option-btn{
+    background-color: rgb(23, 201, 23);
+    padding: 15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  
+  .option-btn:hover{
+    box-shadow: 0px 0px 20px #000000;
+    transition: .3s;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    height: 600px;
+    width: 700px;
+    border-radius: 14px;
+    padding: 20px;}
+  
+  .logo{
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .maintext{
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .container-card{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card:hover {
+    box-shadow: 0 30px 38px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+   
+    width: 500px;
+    height: 500px;
+  }
+  
+  .button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  .button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  .button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+  
+  .butn {
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    /* Green */
+    .success {
+      border-color: #00FFFF;
+      color: black;
+    }
+    
+    .success:hover {
+      background-color: #00FFFF;
+      color: black;
+    }
+    .button1 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      border-radius: 25px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button1:hover span {
+      padding-right: 25px;
+    }
+    
+    .button1:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+  
+    .imega{
+      width:100px;
+      height:100px
+    }
+  
+    .forbtn{
+      border: 1px solid black;
+      width:100px;
+      height:40px;
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      background: #added8;
+    }
+  
+    .nextbtn{
+      margin-left: 50px;
+    }
+  
+    
+    .forbtn{
+      border: 1px solid black;
+      width:100px;
+      height:40px;
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      background: #added8;
+    }
+  
+    .nextbtn{
+      margin-left: 50px;
+    }
+    .forgetbutton{
+      border:1px solid black;
+      width:100px;
+      height:40px;
+      border-radius: 10px;
+      font-weight:bold;
+      letter-spacing:1px;
+      background-color: #added8;
+      margin-right:50px;
+    }
+  
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .forfirstclue{
+      background-color: #87CEEB;
+      width:220px;
+      font-weight: bold;
+      height:70px;
+      transition: all 0.5s;
+      border-radius: 14px;
+      cursor: pointer;
+       
+    }
+    .forfirstclue:hover{
+      background-color: white;
+      box-shadow: 0px 0px 20px #000000;
+    }
+    .forsecondclue{
+      background-color:#87CEEB;
+      width:220px;
+      font-weight: bold;
+      height:70px;
+      transition: all 0.5s;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    .forsecondclue:hover{
+      background-color:white;
+      box-shadow: 0px 0px 20px #000000;
+    }
+    .forthirdclue{
+      background-color: #87CEEB;
+      width:220px;
+      border-radius:14px;
+      height:70px;
+      transition: all 0.5s;
+      font-weight: bold;
+      cursor: pointer;  
+    }
+    .forthirdclue:hover{
+      background-color: white;
+      box-shadow: 0px 0px 20px #000000; 
+    }
+  
+  .getans1{
+    background-color: #added8;
+    width:220px;
+    border-radius:14px;
+    height:70px;
+    transition: all 0.5s;
+    font-weight: bold;
+    cursor: pointer;  
+    margin-left:225px;  
+  }
+  .getans1:hover{
+    background-color: white;
+    box-shadow: 0px 0px 20px #000000; 
+  }
+  .getnextquestion{
+    background-color: #added8;
+    width:220px;
+    border-radius:14px;
+    height:70px;
+    transition: all 0.5s;
+    font-weight: bold;
+    cursor: pointer;  
+    margin-bottom:22px;
+    margin-left:225px;    
+  
+  }
+  .getnextquestion:hover{
+    background-color: white;
+    box-shadow: 0px 0px 20px #000000; 
+  }
+  p{
+    font-size: "59px";
+  }
+  .forbtn{
+    border: 1px solid black;
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #added8;
+  }
+  
+  .nextbtn{
+    margin-left: 50px;
+  }
+  .forgetbutton{
+    border:1px solid black;
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    font-weight:bold;
+    letter-spacing:1px;
+    background-color: #added8;
+    margin-right:50px;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .forfirstclue{
+    background-color: #87CEEB;
+    width:220px;
+    font-weight: bold;
+    height:70px;
+    transition: all 0.5s;
+    border-radius: 14px;
+    cursor: pointer;
+     
+  }
+  .forfirstclue:hover{
+    background-color: white;
+    box-shadow: 0px 0px 20px #000000;
+  }
+  .forsecondclue{
+    background-color:#87CEEB;
+    width:220px;
+    font-weight: bold;
+    height:70px;
+    transition: all 0.5s;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+  .forsecondclue:hover{
+    background-color:white;
+    box-shadow: 0px 0px 20px #000000;
+  }
+  .forthirdclue{
+    background-color: #87CEEB;
+    width:220px;
+    border-radius:14px;
+    height:70px;
+    transition: all 0.5s;
+    font-weight: bold;
+    cursor: pointer;  
+  }
+  .forthirdclue:hover{
+    background-color: white;
+    box-shadow: 0px 0px 20px #000000; 
+  }
+  
+  .getans1{
+  background-color: #added8;
+  width:220px;
+  border-radius:14px;
+  height:70px;
+  transition: all 0.5s;
+  font-weight: bold;
+  cursor: pointer;  
+  margin-left:225px;  
+  }
+  .getans1:hover{
+  background-color: white;
+  box-shadow: 0px 0px 20px #000000; 
+  }
+  .getnextquestion{
+  background-color: #added8;
+  width:220px;
+  border-radius:14px;
+  height:70px;
+  transition: all 0.5s;
+  font-weight: bold;
+  cursor: pointer;  
+  margin-bottom:22px;
+  margin-left:225px;    
+  
+  }
+  .getnextquestion:hover{
+  background-color: white;
+  box-shadow: 0px 0px 20px #000000; 
+  }
+  p{
+    font-size: 19px;
+    font-family: Arial;
+  }
+forclueround.css
+Displaying forclueround.css.
